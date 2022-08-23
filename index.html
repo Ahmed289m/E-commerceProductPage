@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="all.min.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  
+  <title>E-commerce product page</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+
+<div class="container">
+<nav class="navbar navbar-expand-sm justify-content-between pb-4 pt-4">
+ 
+  <ul class="navbar-nav">
+    <a href="#" class="navbar-brand">
+      Sneakers
+    </a>
+<li class="nav-item">
+<a href="#" class="nav-link">  Collections</a>
+
+</li>
+<li class="nav-item">
+  <a href="#" class="nav-link">Men</a>
+  
+  </li>
+  <li class="nav-item">
+    <a href="#" class="nav-link">Women</a>
+    
+    </li>
+    <li class="nav-item">
+      <a href="#" class="nav-link">About</a>
+      
+      </li>
+      <li class="nav-item">
+        <a href="#" class="nav-link">Contact</a>
+        
+        </li>
+
+
+  </ul>
+  <div class="icons">
+  <i id="bag" class="fa-solid fa-cart-shopping bascket"></i>
+  <img class="Avatar" src="./images/image-avatar.png" alt="Avatar" width="40px" height="40px">
+</div>
+
+</nav>
+<div id="card-cont" class="card-cont">
+  <div class="card">
+    <div style="background-color: white;font-weight:600" class="card-header">Card<i id="cancel" style="float: right;cursor:pointer" class="fa-solid fa-xmark"></i></div>
+    <div id="empty" class="card-body text-secondary">Your Card Is Empty!</div>
+
+    <!--Purshered products-->
+    <i id="delet" class="fa-solid fa-trash-can"></i>
+    <div id="purshered"  style="padding: 13px;" >
+   
+
+
+    </div>
+        <!--Purshered products-->
+
+  </div>
+</div>
+<div class="product row mt-5">
+
+  <section class="cardphoto col">
+<img id="origin" src="./images/image-product-1.jpg" width="370px" height="400px" alt="ProductImg " style="cursor: pointer;">
+<div class="smallphotos mt-4">
+
+  <img id="one" class="Activ" src="./images/image-product-1-thumbnail.jpg" alt="" width="80px" height="80px" style="border-radius: 10px;cursor: pointer;"  >
+  <img id="two" class="ph" src="./images/image-product-2-thumbnail.jpg" alt="" width="80px" height="80px" style="border-radius: 10px;cursor: pointer;" >
+  <img id="three" class="ph" src="./images/image-product-3-thumbnail.jpg" alt="" width="80px" height="80px" style="border-radius: 10px;cursor: pointer;" >
+  <img id="four" class="ph" src="./images/image-product-4-thumbnail.jpg" alt="" width="80px" height="80px" style="border-radius: 10px;cursor: pointer;" >
+</div>
+
+
+  </section>
+  <section class="details col pt-5">
+
+<p style=" color:hsl(26, 100%, 55%);letter-spacing: 2px; font-weight: 700;">Sneaker Company</p>
+<h1>Fall Limited Edition Sneakers</h1>
+<p class="mt-4 text-secondary">These low-profile sneakers are your perfect casual wear companion. 
+  Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+  <span class="mt-3"> <h3  style="display: inline;">$<span id="price">125</span>.00</h3> <p class="discount" style="display: inline;">50%</p></span>
+  
+
+<p class="mt-2" style="text-decoration: line-through; opacity:0.8;">$250.00</p>
+  
+<p class="num badge bg-dark p-3" >
+    <svg id="minus" style="float: left; cursor:pointer;" width="12" height="4" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M11.357 3.332A.641.641 0 0 0 12 2.69V.643A.641.641 0 0 0 11.357 0H.643A.641.641 0 0 0 0 .643v2.046c0 .357.287.643.643.643h10.714Z" id="a"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#a"/></svg>
+    
+<span id="num" style="font-size: 15px;">0</span> 
+    
+    <svg id="plus" style="float: right;cursor:pointer;" width="15" height="15" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs><path d="M12 7.023V4.977a.641.641 0 0 0-.643-.643h-3.69V.643A.641.641 0 0 0 7.022 0H4.977a.641.641 0 0 0-.643.643v3.69H.643A.641.641 0 0 0 0 4.978v2.046c0 .356.287.643.643.643h3.69v3.691c0 .356.288.643.644.643h2.046a.641.641 0 0 0 .643-.643v-3.69h3.691A.641.641 0 0 0 12 7.022Z" id="b"/></defs><use fill="#FF7E1B" fill-rule="nonzero" xlink:href="#b"/></svg>
+  </p>
+
+  
+<button id="add" style=" border-radius: 8px;"> 
+<i class="fa-solid fa-cart-shopping"></i> Add To Card
+</button>
+
+
+  </section>
+
+
+
+
+
+
+</div>
+
+
+<!--Side Menu For Mobiles-->
+
+<div id="menuD" class="menuD">
+  <i class="fa-solid fa-bars"></i>
+</div>
+<div id="sidemenu">
+  <div>
+      <p style="padding-bottom: 10px; border-bottom:1px solid hsla(26, 100%, 55%, 0.805);color: black;">Menu</p>
+      <i id="cancelt" class="fa-solid fa-xmark"></i>
+  </div>
+  
+  <a href="#">  Collections </a>
+  <a href="#">  Men </a>
+  <a href="#"> Women </a>
+  <a href="#"> About </a>
+  <a href="#"> Contact </a>
+
+  
+ 
+  </div>
+<!--Side Menu For Mobiles-->
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="index.js"></script>
+<!--
+
+   Collections
+  Men
+  Women
+  About
+  Contact
+
+  Sneaker Company
+
+  Fall Limited Edition Sneakers
+
+  These low-profile sneakers are your perfect casual wear companion. Featuring a 
+  durable rubber outer sole, they’ll withstand everything the weather can offer.
+
+  $125.00
+  50%
+  $250.00
+
+  0
+  Add to cart
+-->
+ 
+  
+ 
+</body>
+</html>
